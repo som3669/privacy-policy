@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "adwipe",
+    "name": "Adwipe",
+    "kind": "Chrome extension",
+    "accent": "#d63b2b",
+    "summary": "Blocks ads, trackers, cookie nags and malware. No data collection."
+  },
+  {
+    "slug": "autofiller",
+    "name": "AutoFiller",
+    "kind": "Chrome extension",
+    "accent": "#2563eb",
+    "summary": "Fills web forms in one click from a local profile. No passwords, no servers."
+  },
+  {
+    "slug": "hookrate",
+    "name": "Hookrate",
+    "kind": "Chrome extension",
+    "accent": "#ff4d3d",
+    "summary": "YouTube channel and video research shown on the pages you already visit. No server."
+  },
+  {
+    "slug": "tabrest",
+    "name": "TabRest",
+    "kind": "Chrome extension",
+    "accent": "#0f9d58",
+    "summary": "Auto-suspends idle tabs to save CPU and memory. Everything stays on your device."
+  },
+  {
+    "slug": "ai-patro",
+    "name": "AI Patro",
+    "kind": "Android app",
+    "accent": "#b71c1c",
+    "summary": "Nepali calendar and panchang. Works fully offline, collects nothing."
+  }
+]

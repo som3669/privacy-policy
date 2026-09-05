@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — TabRest</title>
+<meta name="description" content="Privacy policy for TabRest. Auto-suspends idle tabs to save CPU and memory. Everything stays on your device." />
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 40px 22px 96px; max-width: 760px;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    color: #16161a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e9ec; background: #121214; }
+    td, th { border-color: #2e2e33 !important; }
+    hr { border-color: #2e2e33 !important; }
+    code { background: #1e1e22 !important; }
+    .mark, .card { background: #1e1e22 !important; border-color: #2e2e33 !important; }
+    .card:hover { border-color: #46464e !important; }
+    .muted { color: #9a9aa2 !important; }
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 38px 0 10px; }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  h4 { font-size: 16px; margin: 20px 0 6px; }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  a { color: #0f9d58; }
+  code {
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+    background: #f2f2f4; padding: 1px 5px; border-radius: 4px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { border: 1px solid #e2e2e5; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  hr { border: 0; border-top: 1px solid #e2e2e5; margin: 34px 0; }
+  .mark {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid #e2e2e5; background: #f8f8f9;
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 28px; font-size: 14px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #0f9d58; flex: none; }
+  .muted { color: #6b6b73; }
+  .back { display: inline-block; margin-top: 44px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="mark"><span class="dot"></span><span>TabRest · Chrome extension</span></div>
+<h1>TabRest — Privacy Policy</h1>
+<p><strong>Last updated:</strong> 2026-07-10</p>
+<p>TabRest is designed to protect your privacy. It runs entirely on your own device.</p>
+<h2>What data TabRest collects</h2>
+<p><strong>None.</strong> TabRest does not collect, transmit, sell, or share any personal data. There are no analytics, no tracking, no external servers, and no third-party services. Nothing you do in the browser is ever sent anywhere.</p>
+<h2>What TabRest stores (on your device only)</h2>
+<p>TabRest saves your settings using Chrome's own storage:</p>
+<ul><li>Your preferences (idle time, skip rules)</li><li>Your whitelist of sites that should never be suspended</li><li>Your per-site idle rules</li><li>Simple local counters (e.g. how many tabs were suspended)</li></ul>
+<p>Settings are stored via <code>chrome.storage.sync</code>, which means Chrome may sync them across your own signed-in devices. This is handled by Chrome/Google under your own account — TabRest never sees or transmits this data itself.</p>
+<h2>Permissions and why they are needed</h2>
+<ul><li><strong>tabs</strong> — to see which tabs are idle and to suspend (discard) or restore them.</li><li><strong>storage</strong> — to save your settings and whitelist on your device.</li><li><strong>alarms</strong> — to periodically check for idle tabs in the background.</li><li><strong>idle</strong> — to help detect inactivity.</li><li><strong>contextMenus</strong> — to add the right-click "Suspend this tab" / "Never suspend</li></ul>
+<p>this site" options.</p>
+<ul><li><strong>Host access (content script)</strong> — a small script runs on web pages only to</li></ul>
+<p>detect whether a form field has unsaved input, so TabRest never suspends a tab while you are typing. It checks <em>whether</em> a field has changed — it never reads, stores, or transmits the contents of what you type.</p>
+<h2>Data sharing</h2>
+<p>TabRest shares no data with anyone. There is nothing to share, because nothing is collected.</p>
+<h2>Changes to this policy</h2>
+<p>Any changes will be posted on this page with an updated date.</p>
+<h2>Contact</h2>
+<p>For questions about this policy, contact: som.shrestha@themegrill.com</p>
+<a class="back" href="../">&larr; All privacy policies</a>
+</body>
+</html>

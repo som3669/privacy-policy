@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Adwipe</title>
+<meta name="description" content="Privacy policy for Adwipe. Blocks ads, trackers, cookie nags and malware. No data collection." />
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 40px 22px 96px; max-width: 760px;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    color: #16161a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e9ec; background: #121214; }
+    td, th { border-color: #2e2e33 !important; }
+    hr { border-color: #2e2e33 !important; }
+    code { background: #1e1e22 !important; }
+    .mark, .card { background: #1e1e22 !important; border-color: #2e2e33 !important; }
+    .card:hover { border-color: #46464e !important; }
+    .muted { color: #9a9aa2 !important; }
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 38px 0 10px; }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  h4 { font-size: 16px; margin: 20px 0 6px; }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  a { color: #d63b2b; }
+  code {
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+    background: #f2f2f4; padding: 1px 5px; border-radius: 4px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { border: 1px solid #e2e2e5; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  hr { border: 0; border-top: 1px solid #e2e2e5; margin: 34px 0; }
+  .mark {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid #e2e2e5; background: #f8f8f9;
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 28px; font-size: 14px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #d63b2b; flex: none; }
+  .muted { color: #6b6b73; }
+  .back { display: inline-block; margin-top: 44px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="mark"><span class="dot"></span><span>Adwipe · Chrome extension</span></div>
+<h1>Privacy Policy — Adwipe</h1>
+<p><strong>Last updated:</strong> July 12, 2026</p>
+<p>Adwipe is built to protect your privacy. This policy explains exactly what the extension does and does not do with your information.</p>
+<h2>Summary</h2>
+<p><strong>Adwipe does not collect, store, transmit, or sell any personal data. Everything runs locally in your browser.</strong></p>
+<h2>What data the extension accesses</h2>
+<p>To block ads and trackers, Adwipe needs to inspect network requests and page content in your browser. This happens <strong>entirely on your device</strong>:</p>
+<ul><li><strong>Network requests</strong> — matched against a local blocklist to decide what to block. Chrome's <code>declarativeNetRequest</code> engine performs this locally; the extension never sees a log of your browsing.</li><li><strong>Page content</strong> — content scripts hide leftover ad elements and skip YouTube video ads. This runs in the page and sends nothing anywhere.</li></ul>
+<h2>What data the extension stores</h2>
+<p>The following is saved <strong>locally</strong> using Chrome's <code>storage.local</code> API and never leaves your device:</p>
+<ul><li>Whether protection is on or off</li><li>Your per-site allowlist (sites where you chose to disable blocking)</li><li>A count of how many ads have been blocked</li></ul>
+<p>You can erase all of it at any time by removing the extension.</p>
+<h2>What the extension does NOT do</h2>
+<ul><li>❌ No personal data collection</li><li>❌ No browsing history collection</li><li>❌ No tracking or analytics</li><li>❌ No telemetry</li><li>❌ No data sent to any server</li><li>❌ No data sold or shared with third parties</li><li>❌ No account or sign-up required</li></ul>
+<h2>Permissions explained</h2>
+<table><thead><tr><th>Permission</th><th>Why it is needed</th></tr></thead><tbody><tr><td><code>declarativeNetRequest</code></td><td>Block ad and tracker requests locally</td></tr><tr><td><code>declarativeNetRequestFeedback</code></td><td>Count how many requests were blocked</td></tr><tr><td><code>storage</code></td><td>Remember your settings and allowlist</td></tr><tr><td><code>tabs</code></td><td>Show the correct blocked count for the active tab</td></tr><tr><td><code>alarms</code></td><td>Periodically refresh the blocked-count total</td></tr><tr><td><code>host_permissions</code> (<code>&lt;all_urls&gt;</code>)</td><td>Apply ad blocking on the sites you visit</td></tr></tbody></table>
+<p>Host access is used <strong>only</strong> to block ads and clean pages. No page data is recorded or transmitted.</p>
+<h2>Third parties</h2>
+<p>Adwipe uses <strong>no</strong> third-party services, SDKs, or analytics providers.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the "Last updated" date above will change and the new version will be published at the same URL.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <strong>somshrestha3669@gmail.com</strong></p>
+<a class="back" href="../">&larr; All privacy policies</a>
+</body>
+</html>
