@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Privacy Policy — AI Patro</title>
-<meta name="description" content="Privacy policy for AI Patro. Nepali calendar and panchang. Works fully offline, collects nothing." />
+<meta name="description" content="Privacy policy for AI Patro. Nepali calendar and panchang. Offline except holiday data and the optional Groq-backed AI features." />
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -49,22 +49,45 @@
 <body>
 <div class="mark"><span class="dot"></span><span>AI Patro · Android app</span></div>
 <h1>AI Patro — Privacy Policy</h1>
-<p><strong>Last updated:</strong> June 20, 2026</p>
+<p><strong>Last updated:</strong> September 5, 2026</p>
 <p>AI Patro ("we", "our", or "us") operates the AI Patro mobile application (the "App"). This page explains our policies regarding the collection, use and disclosure of personal data when you use the App.</p>
 <h2>Information we do not collect</h2>
-<p>AI Patro does <strong>not</strong> collect, store or transmit any personal information. The App works entirely offline. No account registration is required.</p>
+<p>AI Patro does <strong>not</strong> collect, store or transmit any personally identifiable information. No account registration is required, and there is no analytics, advertising or tracking of any kind.</p>
 <h2>Data stored on your device</h2>
-<p>The App stores only your selected calendar date locally on your device using Flutter's standard state management. This data never leaves your device.</p>
+<p>The App stores the following locally on your device:</p>
+<ul><li>Your selected calendar date and display preferences</li><li>A cached copy of remotely fetched holiday and configuration data (refreshed</li></ul>
+<p>periodically)</p>
+<ul><li>Your Groq API key, if you choose to enter one in Settings</li></ul>
+<p>This locally stored data never leaves your device except as described in the two sections below.</p>
+<h2>Remote data fetching</h2>
+<p>On launch, the App fetches holiday and configuration data from a remote server to keep festival and tithi information up to date. This request:</p>
+<ul><li>Is an outbound HTTPS GET request to a content delivery endpoint</li><li>Does <strong>not</strong> include any personal or device-identifying information in the</li></ul>
+<p>request body</p>
+<ul><li>Transmits standard HTTP headers (IP address, User-Agent) as a normal</li></ul>
+<p>consequence of any internet request — this data is handled by the CDN provider (GitHub/Microsoft) under their own privacy policy</p>
+<ul><li>Is cached locally for up to 24 hours; no request is made if the cache is fresh</li></ul>
+<h2>AI features and Groq</h2>
+<p>The AI assistant, panchang explanations, rashifal, greetings and name suggestions are the only other network activity in the App. They are served by <strong>Groq</strong>, a third-party inference provider.</p>
+<p>When you use one of those features — and only then — the App sends an HTTPS request to <code>api.groq.com</code> containing:</p>
+<ul><li>The text of your request. For the assistant, this is the message you type and</li></ul>
+<p>the earlier messages in that conversation. For panchang explanations, rashifal, greetings and name suggestions, it is the already-computed values the App is asking to have explained, plus any name or selection you supplied.</p>
+<ul><li>The requested language and length, and formatting instructions.</li><li>An API key for authentication.</li></ul>
+<p>What is <strong>not</strong> sent: your identity, your device identifiers, your location, or any of your stored preferences or calendar history. There is no account, so requests are not tied to a profile.</p>
+<p>Groq processes these requests on its own servers under <a href="https://groq.com/privacy-policy/">Groq's privacy policy</a>, and its handling of the request is governed by that policy rather than this one. Do not type anything into the assistant that you would not want to send to a third-party service.</p>
+<p><strong>Every other feature works fully offline</strong> — the calendar, tithi, panchang, holidays, muhurat, date converter and widget are all computed on your device and never send anything anywhere.</p>
+<p>You may enter your own free Groq API key in Settings (get one at <a href="https://console.groq.com/keys">console.groq.com/keys</a>); it is stored only on your device and is used only to authenticate your own requests. Leaving the AI features unused means no request to Groq is ever made.</p>
 <h2>Internet permission</h2>
-<p>The App declares the <code>INTERNET</code> permission in its manifest to support potential future features. As of the current version, no network requests are made.</p>
+<p>The App declares the <code>INTERNET</code> permission for the two purposes described above: fetching holiday and configuration data, and the AI features. No other network activity occurs.</p>
 <h2>Third-party services</h2>
-<p>The App does not use any third-party analytics, advertising SDKs or tracking libraries.</p>
+<p>The App uses no third-party analytics, advertising SDKs or tracking libraries. Two third parties receive requests:</p>
+<table><thead><tr><th>Service</th><th>What it receives</th><th>When</th></tr></thead><tbody><tr><td>GitHub (content delivery)</td><td>A plain HTTPS GET, plus standard request headers</td><td>On launch, at most once every 24 hours</td></tr><tr><td>Groq (AI inference)</td><td>The text of your AI request, as described above</td><td>Only when you use an AI feature</td></tr></tbody></table>
+<p>Each provider's own privacy policy applies to requests made to their servers.</p>
 <h2>Children's privacy</h2>
-<p>The App does not knowingly collect any personally identifiable information from children under 13. The App is suitable for all ages.</p>
+<p>The App does not knowingly collect any personally identifiable information from children under 13. The App is suitable for all ages. Note that the AI features send text to a third-party service; a parent who would rather avoid that can simply not use them.</p>
 <h2>Changes to this policy</h2>
 <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date.</p>
 <h2>Contact</h2>
-<p>Questions about this privacy policy: <a href="mailto:som.shrestha@themegrill.com">som.shrestha@themegrill.com</a></p>
+<p>Questions about this privacy policy: <a href="mailto:somshrestha3669@gmail.com">somshrestha3669@gmail.com</a></p>
 <a class="back" href="../">&larr; All privacy policies</a>
 </body>
 </html>

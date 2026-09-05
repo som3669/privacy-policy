@@ -202,6 +202,7 @@ for (const product of products) {
   console.log(
     `src/${product.slug}.md -> ${product.slug}/index.html  (${(html.length / 1024).toFixed(1)} KB)`
   );
+
   count++;
 }
 
@@ -222,9 +223,11 @@ const landing = page({
   description: 'Privacy policies for Som Shrestha’s browser extensions and apps.',
   accent: '#16161a',
   body: `<h1>Privacy policies</h1>
-<p class="muted">Policies for my browser extensions and apps. None of them collect,
-transmit or sell personal data — each page states exactly what its product reads
-and what it stores on your own device.</p>
+<p class="muted">Policies for my browser extensions and apps. None of them have an
+account, an analytics pipeline or an advertising SDK, and none of them sell data.
+Each page states exactly what its product reads, what it stores on your own
+device, and — where anything leaves the device at all — what is sent and to
+whom.</p>
 <div class="grid">
 ${cards}
 </div>

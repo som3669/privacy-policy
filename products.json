@@ -32,6 +32,6 @@
     "name": "AI Patro",
     "kind": "Android app",
     "accent": "#b71c1c",
-    "summary": "Nepali calendar and panchang. Works fully offline, collects nothing."
+    "summary": "Nepali calendar and panchang. Offline except holiday data and the optional Groq-backed AI features."
   }
 ]
