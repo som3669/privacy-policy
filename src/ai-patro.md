@@ -1,6 +1,6 @@
 # AI Patro — Privacy Policy
 
-**Last updated:** September 5, 2026
+**Last updated:** September 8, 2026
 
 AI Patro ("we", "our", or "us") operates the AI Patro mobile application (the
 "App"). This page explains our policies regarding the collection, use and
@@ -9,8 +9,10 @@ disclosure of personal data when you use the App.
 ## Information we do not collect
 
 AI Patro does **not** collect, store or transmit any personally identifiable
-information. No account registration is required, and there is no analytics,
-advertising or tracking of any kind.
+information. No account registration is required, and there is no analytics or
+tracking of any kind. The App currently serves no advertising; if advertising
+is introduced in a future version, this policy will be updated before that
+version ships, and the "Last updated" date above will change.
 
 ## Data stored on your device
 
@@ -80,8 +82,9 @@ activity occurs.
 
 ## Third-party services
 
-The App uses no third-party analytics, advertising SDKs or tracking libraries.
-Two third parties receive requests:
+The App uses no third-party analytics or tracking libraries, and no
+advertising SDK is present in the current version. Two third parties receive
+requests:
 
 | Service | What it receives | When |
 |---|---|---|
