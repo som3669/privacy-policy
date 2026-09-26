@@ -5,7 +5,7 @@
 ## Summary
 
 Sunau reads notifications only from apps you choose, turns them into speech on your phone, and
-does not upload them anywhere. It has no accounts and no advertising. The only data that leaves
+does not upload them anywhere. It has no accounts. The only data that leaves
 your phone is the diagnostic information Google ML Kit sends, described below.
 
 ## Notification Access
@@ -50,6 +50,12 @@ announcement is kept in memory only, so it can be repeated, and is gone when Sun
 is deleted
 automatically after the period you choose and can be cleared at any time. Sunau's data is excluded
 from Android cloud backup and device transfer.
+
+## Advertising
+
+The current version of Sunau shows no advertising. A future version may show ads; if it does,
+this policy will be updated to describe the advertising provider and the data it uses before that
+version is released. Notification text will never be used for advertising.
 
 ## Sharing
 
