@@ -9,6 +9,9 @@ Created 2026-09-05 (moved out of the public all-combine-repo). Moved locally fro
 - `adwipe/`, `autofiller/`, `hookrate/`, `tabrest/` — Chrome extensions
 - `ai-patro/` — Android app; linked from Play listing, `ai_patro/brand/store-listing.md`
   and in-app `lib/presentation/widgets/privacy_policy_screen.dart`
+- `sunau/` — Android app; source copied from `sunau/docs/privacy-policy.md` (drop its HTML
+  comment). The in-app copy is `sunau/lib/features/privacy/domain/privacy_policy_text.dart`;
+  all three must match, plus Play Data safety (ML Kit diagnostics = collected, not shared)
 
 ## Layout
 - `src/<slug>.md` — only source of truth · `products.json` — slug, name, kind, accent, summary

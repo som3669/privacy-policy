@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Sunau</title>
+<meta name="description" content="Privacy policy for Sunau. Reads chosen notifications aloud on your phone. Notification text never leaves it; only Google ML Kit diagnostics do." />
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 40px 22px 96px; max-width: 760px;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    color: #16161a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e9ec; background: #121214; }
+    td, th { border-color: #2e2e33 !important; }
+    hr { border-color: #2e2e33 !important; }
+    code { background: #1e1e22 !important; }
+    .mark, .card { background: #1e1e22 !important; border-color: #2e2e33 !important; }
+    .card:hover { border-color: #46464e !important; }
+    .muted { color: #9a9aa2 !important; }
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 38px 0 10px; }
+  h3 { font-size: 17px; margin: 26px 0 8px; }
+  h4 { font-size: 16px; margin: 20px 0 6px; }
+  p, li { font-size: 16px; }
+  ul { padding-left: 22px; }
+  a { color: #e8590c; }
+  code {
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+    background: #f2f2f4; padding: 1px 5px; border-radius: 4px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+  th, td { border: 1px solid #e2e2e5; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  hr { border: 0; border-top: 1px solid #e2e2e5; margin: 34px 0; }
+  .mark {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid #e2e2e5; background: #f8f8f9;
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 28px; font-size: 14px;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: #e8590c; flex: none; }
+  .muted { color: #6b6b73; }
+  .back { display: inline-block; margin-top: 44px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="mark"><span class="dot"></span><span>Sunau · Android app</span></div>
+<h1>Sunau — Privacy Policy</h1>
+<p><strong>Last updated:</strong> 26 September 2026</p>
+<h2>Summary</h2>
+<p>Sunau reads notifications only from apps you choose, turns them into speech on your phone, and does not upload them anywhere. It has no accounts and no advertising. The only data that leaves your phone is the diagnostic information Google ML Kit sends, described below.</p>
+<h2>Notification Access</h2>
+<p>Sunau uses Android's Notification Access permission to read the title and text of notifications so it can translate and announce them. Only notifications from apps you switch on in "Apps to Announce" are processed; notifications from every other app are ignored before their content is read. You can revoke Notification Access at any time in Android settings.</p>
+<h2>Sensitive information</h2>
+<p>Every notification passes a filter before it is translated, spoken or saved. Notifications containing one-time passwords, verification codes, passwords, PINs, CVVs or card numbers are blocked completely. Account numbers, reference numbers, phone numbers and links are removed from what remains.</p>
+<h2>Processing on your phone</h2>
+<p>Language detection and translation use Google ML Kit, which runs on your device. Translation models are downloaded from Google the first time you enable a language. Speech uses the text-to-speech engine installed on your phone. If your chosen voice is an online voice provided by your speech engine, that engine's own privacy policy applies to the speech it generates.</p>
+<h2>Diagnostics sent by Google ML Kit</h2>
+<p>Google ML Kit sends Google diagnostic and usage information: device model and Android version, Sunau's package name and version, a per-installation identifier, performance metrics and error codes, and which languages were detected or configured for translation. Google uses it for diagnostics and usage analytics, encrypts it in transit and does not share it with third parties. Google's published list of this data does not include the text being detected or translated, and Sunau never sends notification text anywhere. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit's data disclosure</a>.</p>
+<h2>What is stored</h2>
+<p>Settings are stored on your phone, including any sender names and keywords you add to sender rules. Sunau also keeps today's number of payments received and their total for the daily summary and the home-screen widget; these reset every day. If history is on (it can be turned off), Sunau stores the app name, the time, whether an item was a message, a payment or a blocked notification, and for payments the type and amount. The text of notifications is never stored. The last announcement is kept in memory only, so it can be repeated, and is gone when Sunau stops. History is deleted automatically after the period you choose and can be cleared at any time. Sunau's data is excluded from Android cloud backup and device transfer.</p>
+<h2>Sharing</h2>
+<p>Sunau does not sell, share or transmit notification content or history to anyone, including the developer. The developer receives no data from the app.</p>
+<h2>Independence</h2>
+<p>Sunau is not affiliated with any bank, wallet, payment provider or messaging service whose notifications it reads. Their names and trademarks belong to their owners.</p>
+<h2>Children</h2>
+<p>Sunau is not directed at children under 13.</p>
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be published at the same address with a new date. Questions: use the developer contact address on Sunau's Google Play listing.</p>
+<a class="back" href="../">&larr; All privacy policies</a>
+</body>
+</html>
