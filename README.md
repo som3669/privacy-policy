@@ -13,6 +13,7 @@ repository staying public.
 | Hookrate | Chrome extension | https://som3669.github.io/privacy-policy/hookrate/ |
 | TabRest | Chrome extension | https://som3669.github.io/privacy-policy/tabrest/ |
 | AI Patro | Android app | https://som3669.github.io/privacy-policy/ai-patro/ |
+| TrakWP | Web app | https://som3669.github.io/privacy-policy/trakwp/ |
 
 ## Why this is a separate repo
 
@@ -28,11 +29,13 @@ product's source.
 ## Layout
 
 ```
-src/<slug>.md        the only source of truth for each policy
-products.json        slug, display name, kind, accent colour, summary
-tool/render.mjs      renders src/*.md -> <slug>/index.html + landing index.html
-<slug>/index.html    generated — do not edit
-index.html           generated landing page — do not edit
+src/<slug>.md            the only source of truth for each privacy policy
+src/<slug>-terms.md      optional terms of service for that product
+products.json            slug, display name, kind, accent colour, summary
+tool/render.mjs          renders the markdown to HTML
+<slug>/index.html        generated privacy policy — do not edit
+<slug>/terms.html        generated terms, in the same folder — do not edit
+index.html               generated landing page — do not edit
 ```
 
 ## Editing a policy
@@ -46,7 +49,7 @@ root with no build step.
 
 ## Adding a product
 
-1. Write `src/<slug>.md`.
+1. Write `src/<slug>.md`. Add `src/<slug>-terms.md` when the product needs terms.
 2. Add an entry to `products.json`.
 3. `node tool/render.mjs`, then commit.
 

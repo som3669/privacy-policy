@@ -12,9 +12,12 @@ Created 2026-09-05 (moved out of the public all-combine-repo). Moved locally fro
 - `sunau/` — Android app; source copied from `sunau/docs/privacy-policy.md` (drop its HTML
   comment). The in-app copy is `sunau/lib/features/privacy/domain/privacy_policy_text.dart`;
   all three must match, plus Play Data safety (ML Kit diagnostics = collected, not shared)
+- `trakwp/` — web app (trakwp.me). Privacy at `trakwp/index.html`, terms at `trakwp/terms.html`.
+  In-app copies are `resources/js/pages/privacy.tsx` and `terms.tsx`; keep them in step.
 
 ## Layout
-- `src/<slug>.md` — only source of truth · `products.json` — slug, name, kind, accent, summary
+- `src/<slug>.md` — privacy source of truth · optional `src/<slug>-terms.md`
+- `products.json` — slug, name, kind, accent, summary
 - `tool/render.mjs` — renders to `<slug>/index.html` + landing `index.html` (generated,
   committed, never hand-edit). Node 18+, no deps.
 

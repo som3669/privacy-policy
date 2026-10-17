@@ -40,5 +40,12 @@
     "kind": "Android app",
     "accent": "#e8590c",
     "summary": "Reads chosen notifications aloud on your phone. Notification text never leaves it; only Google ML Kit diagnostics do."
+  },
+  {
+    "slug": "trakwp",
+    "name": "TrakWP",
+    "kind": "Web app",
+    "accent": "#3a6ad4",
+    "summary": "Daily WordPress.org rankings and a rank simulator. Accounts and subscriptions; no ads, no sale of personal data."
   }
 ]

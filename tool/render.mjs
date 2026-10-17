@@ -203,6 +203,24 @@ for (const product of products) {
     `src/${product.slug}.md -> ${product.slug}/index.html  (${(html.length / 1024).toFixed(1)} KB)`
   );
 
+  const termsSrc = path.join(SRC_DIR, `${product.slug}-terms.md`);
+  if (fs.existsSync(termsSrc)) {
+    const termsHtml = page({
+      title: `Terms of Service — ${product.name}`,
+      description: `Terms of service for ${product.name}.`,
+      accent: product.accent,
+      body: [
+        `<div class="mark"><span class="dot"></span><span>${escape(product.name)} · ${escape(product.kind)}</span></div>`,
+        render(fs.readFileSync(termsSrc, 'utf8')),
+        '<a class="back" href="./">Privacy policy</a>',
+      ].join('\n'),
+    });
+    fs.writeFileSync(path.join(outDir, 'terms.html'), termsHtml);
+    console.log(
+      `src/${product.slug}-terms.md -> ${product.slug}/terms.html  (${(termsHtml.length / 1024).toFixed(1)} KB)`
+    );
+  }
+
   count++;
 }
 
@@ -223,11 +241,11 @@ const landing = page({
   description: 'Privacy policies for Som Shrestha’s browser extensions and apps.',
   accent: '#16161a',
   body: `<h1>Privacy policies</h1>
-<p class="muted">Policies for my browser extensions and apps. None of them have an
-account, an analytics pipeline or an advertising SDK, and none of them sell data.
-Each page states exactly what its product reads, what it stores on your own
-device, and — where anything leaves the device at all — what is sent and to
-whom.</p>
+<p class="muted">Policies for my browser extensions, apps and sites. Each page states
+what that product reads, what it stores, and what is sent and to whom. The
+extensions and on-device apps keep their data on the device. TrakWP is a hosted
+web app with accounts and paid subscriptions; its page says exactly what that
+involves. None of them sell data.</p>
 <div class="grid">
 ${cards}
 </div>
